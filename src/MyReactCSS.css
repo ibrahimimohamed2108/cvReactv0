@@ -1,0 +1,141 @@
+/* MyReactCSS.css */
+/* Styles pour le CV */
+
+/* Style du corps de la page */
+body {
+  background: url(https://static.vecteezy.com/system/resources/previews/022/901/094/non_2x/simple-abstract-art-minimalist-hand-drawn-background-with-wavy-lines-and-cute-colorful-blob-shapes-simple-trendy-flat-illustration-vector.jpg) center/cover no-repeat;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: auto;
+  padding: 0 20px 20px 20px;
+  border: 10px solid black;
+}
+
+/* Style du tableau CV */
+.cv-table {
+  border: 3px solid #000;
+}
+
+/* Style de l'en-tête */
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+/* Style de l'en-tête de la page */
+.header {
+  background-color: #0e28a0;
+  color: #fff;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+/* Style de l'image du profil */
+header img {
+  border-radius: 100%; /* Rend l'image ronde */
+  max-width: 200px; /* Définit la largeur maximale pour l'image */
+  height: auto; /* Maintient le ratio hauteur/largeur */
+}
+
+/* Style de la barre de navigation */
+nav ol {
+  list-style: none;
+  padding: 0;
+}
+
+nav ol li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ol li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ol li a:hover {
+  color: #4CAF50;
+}
+
+/* Style des sections */
+section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+/* Style des tableaux */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style des listes à puces */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Style du pied de page */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+/* Animation pour les liens de la barre de navigation */
+nav ol li a {
+  position: relative;
+}
+
+nav ol li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #4CAF50;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+nav ol li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
